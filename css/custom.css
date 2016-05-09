@@ -1,0 +1,173 @@
+/* Move down content because we have a fixed navbar that is 50px tall */
+body {
+  padding-top: 50px;
+  padding-bottom: 20px;
+}
+
+.jumbotron{ /*tout ce qui se trouve dans la classe jumbotron va être centré*/
+	text-align: center;
+	background-image: url(../images/hero_image.jpg);
+	color: white;
+}
+
+.jumbotron h1{
+	margin-top: 0px;
+	margin-bottom: 50px;
+}
+
+.jumbotron p{
+	margin-bottom: 50px;
+	padding: 0 50px;
+	font-weight: 200;
+}
+
+#get-involved{
+	background-color: #f5f5f5;
+}
+
+#contact{
+	color: pink;
+	font-size: 30px;
+}
+
+/*How would I center a block element that I wanted 
+to have a margin top and bottom of 20px?
+
+margin: 20px auto;
+*/
+
+/*si nous voulions modifier aussi le background color de la partie/container who-we-are,
+il aurait fallu créer un <div id> de cette partie
+
+#who-we-are{
+	background-color: #f2f2f2;
+}*/
+
+.btn-lg{
+	font-size: 36px;
+}
+
+ul.nav, .jumbotron h1{ /*nous changeons le type de caractère des unnumbered lines (à l'entête de la page)
+dans la classe nav, ainsi que le heading du contenant jumbotron*/
+	font-family: 'Arvo', courier , serif; /*si ça marche pas avec arvo, changer pour courier, sinon serif*/
+}
+
+ul.nav {
+	font-size: 13px;
+}
+
+footer{
+	background-color: #f74c3c;
+	padding-top: 130px;
+	padding-bottom: 30px;
+}
+
+.emphasis{ /*on a créé une classe/fonction ou une nouvelle balise (span class="") pour paramétrer certains mots (ligne 67)*/
+	color: OldLace;
+	font-family: 'Arvo';
+	text-transform: uppercase;
+}
+
+.homepage{ /*on veut que tout ce qui se trouve dans le container "homepage" (ligne 73) soit centré*/
+	text-align: center;
+	padding-bottom: 30px;
+	padding-top: 30px;
+}
+
+.homepage h2{ /*concerne la partie h2 du contenant homepage*/
+	color: #e74c3c;
+	font-family: 'Arvo', courier , serif;
+	text-transform: uppercase; /*toutes les lettres sont au majuscule*/
+	font-size: 30px;
+}
+
+.homepage h3{
+	color: #e74c3c;
+	font-family: 'Arvo', courier , serif;
+	text-transform: uppercase;
+	font-size: 26px;
+}
+
+.homepage p{
+	font-size: 21px;
+	font-weight: 300;
+}
+
+.homepage a{ /*ce style css ne va s'appliquer qu'au segment "a" (où il y a les boutons)*/
+	color: #e74c3c;
+}
+
+.homepage a:hover{ /*le but ici est d'éditer le lien, et au lieu de souligner le mot lorsque la souris est là, on va modifier l'opacité*/
+	color: #e74c3c;
+	text-decoration: none;
+	opacity: .7;
+}
+
+.homepage hr{ /*pour la ligne en dessous de 'Get involved'*/
+	border-top: 1px solid #e74c3c;
+	width: 160px;
+	margin-top: 15px;
+}
+
+/*font ou caractère téléchargé à part (dafont.com)*/
+@font-face {
+	font-family: engraved; 
+	src: url('../fonts/engraved-regular.ttf');
+}/*sinon, avec google fonts, on utiliser les liens qu'ils donnent*/
+
+/*Responsive styling -> ligne à copier du site de bootstrap*/
+
+/*pour les medium devices*/
+@media (max-width: 1199px) { 
+
+	.jumbotron h1{
+		font-size: 56px;
+		margin-bottom: 30px;
+	}
+
+ }
+
+/*pour les moyens*/
+ @media (max-width: 991px) { 
+
+	.jumbotron h1{
+		font-size: 44px;
+	}
+
+	.jumbotron p{
+		padding: 0 10px; /*en haut et en bas à 0px, à gauche et droite à 10px*/
+	}
+
+	#get-involved .col-md-4{
+		padding-top: 20px;
+		padding-bottom: 20px;
+	}
+
+ }
+
+ /*pour les petits*/
+
+ @media (max-width: 767px) { 
+
+	.jumbotron h1{
+		font-size: 24px;
+	}
+
+	.jumbotron p{
+		font-size: 16px;
+		padding: 0;
+	}
+
+	.btn-lg{
+		font-size: 18px;
+	}
+
+	.homepage p{
+		font-size: 18px;
+	}
+
+	footer img{
+		width: 80%;
+	}
+
+ }

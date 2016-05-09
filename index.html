@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>One Million Lines for Madagascar</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="css/custom.css" rel="stylesheet">
+
+    <!--caractère ramené de google-font-->
+    <link href='https://fonts.googleapis.com/css?family=Arvo' rel='stylesheet' type='text/css'>
+
+    <!--icons de font-awesome-->
+    <link rel="stylesheet" href="fonts/font-awesome/css/font-awesome.min.css">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header"> <!--barre de tâche, en haut de la page-->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"><img src="images/top_logo.png" title="One Million Lines" alt="One Million Lines" ></a>
+          <a class="navbar-brand" href="#"><img src="images/for_mada.png" width="300" height="70" style="margin-top: -15px;margin-left: -20px" title="Pour Madagascar" alt="Pour Madagascar"></a>
+        </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right"> <!--navbar-right permet de décaler les listes ci-dessous vers la droite-->
+            <li><a href="#who">WHO WE ARE</a></li>
+            <li><a href="#get-involved">GET INVOLVED</a></li>
+            <li><a href="#contact" id="contact"><i style="font-family: engraved">CONTACT</i></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+
+    <!-- Main jumbotron for a primary marketing message or call to action -->
+    <div class="jumbotron"> <!-- contient l'entête de la page-->
+      <div class="container">
+        <h1>Our goal is to inspire <br>Antananarivo to write 1,000,000<br> lines of code</h1>
+        <p>All over  the country, people are taking the <strong style="font-size: 30px;"> HOUR OF CODE </strong> challenged issued by <strong style="color: #f74c3c; font-family: 'Arvo';"><i> CODE.org </i></strong>. Millions of lines of code are being written. In the capital of <span class="emphasis"> Madagascar </span>, Antananarivo, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
+        <p><a class="btn btn-danger btn-lg" href="#" role="button">Learn more &raquo;</a></p> <!--"danger" au lieu de "primary" pour la couleur rouge-->
+        <img src="images/code_logo.png"  title="code.org logo" alt="code.org" style="width: 100px;height:100px;">
+      </div>
+    </div>
+
+    <div id="who"> <!--le id est comme "identité", on l'utilise dans le cas
+    où on ne va appliquer une seule modification à seule boite/objet. C'est plus spécifique qu'une class. Use an id if the style is unique to that element alone. Use class if there will be other elements with similar styling.
+    Aussi, on peut l'utiliser pour lier les sections dans les pages (lignes 57 et 58)-->
+      <div class="container homepage"> <!-- on a créé un même class div que celle de homepage pour avoir le même style-->
+        <img src="images/massive_academy.png">
+        <h2>Who we are</h2>
+        <hr>
+        <p>We are <a href="http://www.massiveacademy.us" target="_blank"> MASSIVE Academy</a>. We aim to improve education thought both method - effective project-based learning - and material - by teaching skills that are applicable to improving your life today</p>
+      </div>
+    </div>
+
+    <div id="get-involved">
+      <div class="container homepage">
+        <!-- Example row of columns -->
+        <h2>Get involved</h2>
+        <hr> <!--c'est un block elements, il faut donc créer une classe css, pour le centrer par exemple-->
+        <div class="row">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-graduation-cap fa-stack-1x fa-inverse"></i>
+            </span>
+            <h3>Students</h3>
+            <p>Want to learn how to code? Want to help us get to 1,000,000 lines? Click the button below and we'll let you know how to get involved. </p>
+            <p><a class="btn btn-default" href="https://docs.google.com/forms/d/1h8JpqID1WlqUo_jRNGDu4q1QIb-ilOAB0AgjUx1bDXc/viewform?entry.704037411&entry.1055876302" target="_blank" role="button">Start Learning &raquo;</a></p> 
+            <!--href="" où on a mis un lien dans le fichier source du site est un lien relatif. le &raquo donne les 2 flèches >> -->
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-university fa-stack-1x fa-inverse"></i>
+            </span>
+            <h3>Educators</h3>
+            <p>Want to bring this initiative to your school or institution? Awesome! Click the button below and we'll make it happen. </p>
+            <p><a class="btn btn-default" href="http://www.google.com" role="button">Join the Initiative &raquo;</a></p>
+            <!-- lien absolu vers google-->
+         </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-credit-card fa-stack-1x fa-inverse"></i>
+            </span>
+            <h3>Sponsors</h3>
+            <p>We love all the support we get to help host more events, and empower more lives with the knowledge of coding. Click to get involved. </p>
+            <p><a class="btn btn-default" href="http://www.scotiabank.ca" target="_blank" role="button">Give Support &raquo;</a></p>
+            <!--target="_blank" ouvre un nouvel onglet-->
+          </div>
+        </div>
+    </div> <!-- /container -->
+
+    <hr>
+
+    <footer>
+      <div class="container"> <!--on l'a enrobé dans un div pour faciliter la modification, la mise en place d'un background-color, etc.-->
+        <p><img src="images/bottom_logo.png"></p>
+        <p style="font-family: Arvo; color: white;"> &copy;  2016 Magic_Mike, Inc.</p>
+      </div>
+    </footer>
+
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+  </body>
+</html>
