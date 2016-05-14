@@ -42,3 +42,25 @@ $("a.navbar-brand[href^='#']").on('click', function(e) {
      });
 
 });
+
+//Pour revenir à l'icône back-to-top
+$("#back-to-top a[href^='#']").on('click', function(e) {
+//a = lien -> on a fait un lien vers navbar-brand
+   // prevent default anchor click behavior
+   e.preventDefault();
+
+   // store hash
+   var hash = this.hash;
+
+   // animate
+   $('html, body').animate({
+       scrollTop: $(hash).offset().top -50
+     }, 700, function(){
+      //-50 est un offset, pour régler la position lors du click
+
+       // when done, add hash to url
+       // (default click behaviour)
+       window.location.hash = hash;
+     });
+
+});

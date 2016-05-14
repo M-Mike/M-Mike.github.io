@@ -30,6 +30,16 @@ body {
 	font-size: 30px;
 }
 
+#back-to-top{
+	position: fixed;
+	bottom: 20px;
+	right: 20px;
+}
+
+#back-to-top a{
+	color: #333;
+}
+
 /*How would I center a block element that I wanted 
 to have a margin top and bottom of 20px?
 
