@@ -21,6 +21,24 @@ body {
 	font-weight: 200;
 }
 
+.modal-content iframe{
+	margin-bottom: 10px;
+	margin-top: 15px;
+}
+
+.modal-content button.close{
+	position: absolute;
+	top: 5px;
+	right: 5px;
+	background-color: white;
+	font-size: 28px;
+	width: 30px;
+	opacity: 1;
+	border-radius: 24px;
+	-webkit-border-radius:24px;
+	-moz-border-radius:24px;
+}
+
 #get-involved{
 	background-color: #f5f5f5;
 }
@@ -31,7 +49,7 @@ body {
 }
 
 #back-to-top{
-	position: fixed;
+	position: absolute;
 	bottom: 20px;
 	right: 20px;
 }
@@ -70,6 +88,7 @@ footer{
 	background-color: #f74c3c;
 	padding-top: 130px;
 	padding-bottom: 30px;
+	position: relative;
 }
 
 .emphasis{ /*on a créé une classe/fonction ou une nouvelle balise (span class="") pour paramétrer certains mots (ligne 67)*/

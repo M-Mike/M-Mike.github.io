@@ -66,7 +66,17 @@
       <div class="container">
         <h1>Our goal is to inspire <br>Antananarivo to write 1,000,000<br> lines of code</h1>
         <p>All over  the country, people are taking the <strong style="font-size: 30px;"> HOUR OF CODE </strong> challenged issued by <strong style="color: #f74c3c; font-family: 'Arvo';"><i> CODE.org </i></strong>. Millions of lines of code are being written. In the capital of <span class="emphasis"> Madagascar </span>, Antananarivo, the community is taking the challenge and our goal is to write 1,000,000 lines of code_</p>
-        <p><a class="btn btn-danger btn-lg" href="#" role="button">Learn more &raquo;</a></p> <!--"danger" au lieu de "primary" pour la couleur rouge-->
+        <p><a class="btn btn-danger btn-lg" role="button" data-toggle="modal" data-target="#myModal">Learn more &raquo;</a></p> <!--"danger" au lieu de "primary" pour la couleur rouge-->
+        <!-- Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+          <div class="modal-dialog" role="document">
+            <div class="modal-content">
+              <button type="button" class="close btn btn-danger" data-dismiss="modal" aria-hidden="true">x</button>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/YjAbvb7s3OM" frameborder="0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+        <!--fin du modal-->
         <img src="images/code_logo.png"  title="code.org logo" alt="code.org" style="width: 100px;height:100px;">
       </div>
     </div>
@@ -128,14 +138,13 @@
         <p><img src="images/bottom_logo.png"></p>
         <p style="font-family: Arvo; color: white;"> &copy;  2016 Magic_Mike, Inc.</p>
       </div>
+      <div id="bback-to-top"> <!--on a intégré l'icône dans la page-->
+        <a href="#jumbotron"> <!--on doit le lier avec la section en haut de page-->
+        <i class="fa fa-2x fa-chevron-circle-up" aria-hidden="true"></i></a>
+      </div>
     </footer>
 
-    <div id="back-to-top"> <!--on a intégré l'icône dans la page-->
-      <a href="#jumbotron"> <!--on doit le lier avec la section en haut de page-->
-        <i class="fa fa-2x fa-chevron-circle-up" aria-hidden="true"></i>
-      </a>
-    </div>
-
+    
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
